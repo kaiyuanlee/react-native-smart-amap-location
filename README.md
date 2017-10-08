@@ -1,3 +1,15 @@
+# 苹果审核问题
+
+Guideline 2.5.2 - Performance - Software Requirements
+
+Your app, extension, or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with App Store Review Guideline 2.5.2 and section 3.3.2 of the Apple Developer Program License Agreement.
+
+This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior and/or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.
+
+#高德官方应对策略
+
+http://lbs.amap.com/dev/room?id=47&sa=a825e49fddf2cf9bc14ed957b192774b
+
 # react-native-smart-amap-location
 
 [![npm](https://img.shields.io/npm/v/react-native-smart-amap-location.svg)](https://www.npmjs.com/package/react-native-smart-amap-location)
